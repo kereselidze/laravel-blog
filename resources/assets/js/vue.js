@@ -7,6 +7,7 @@ Vue.component('comment-list', require('./components/comments/Comment-list.vue'))
 Vue.component('comment-form', require('./components/comments/Comment-form.vue'));
 
 Vue.component('like', require('./components/Like.vue'));
+Vue.component('blog-post', require('./components/posts/Post.vue'));
 
 window.Event = new Vue();
 

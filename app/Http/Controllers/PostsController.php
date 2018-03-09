@@ -14,6 +14,7 @@ class PostsController extends Controller
      */
     public function index(Request $request)
     {
+
         return view('posts.index', [
             'posts' => Post::search($request->input('q'))
                              ->with('author', 'media')

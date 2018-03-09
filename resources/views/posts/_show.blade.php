@@ -1,4 +1,11 @@
+
+
 <div class="card">
+  <blog-post
+          title="{{$post->title}}"
+          author="{{$post->author}}"
+          content="{{$post->content}}"
+  ></blog-post>
   @if ($post->hasThumbnail())
     <a href="{{ route('posts.show', $post)}}">
       {{ Html::image($post->thumbnail()->url, $post->thumbnail()->original_filename, ['class' => 'card-img-top']) }}
@@ -15,11 +22,11 @@
       <small class="text-muted">
         <i class="fa fa-comments-o" aria-hidden="true"></i> {{ $post->comments_count }}
         <like
-          likes_count="{{ $post->likes_count }}"
-          liked="{{ $post->isLiked() }}"
-          item_id="{{ $post->id }}"
-          item_type="posts"
-          logged_in="{{ Auth::check() }}"
+                likes_count="{{ $post->likes_count }}"
+                liked="{{ $post->isLiked() }}"
+                item_id="{{ $post->id }}"
+                item_type="posts"
+                logged_in="{{ Auth::check() }}"
         ></like>
       </small>
     </p>

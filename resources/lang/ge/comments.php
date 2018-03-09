@@ -1,8 +1,8 @@
 <?php
 
 return [
-  'count' => ':count commentaire|:count commentaires',
-  'comment' => 'Commenter',
+  'count' => ':count კომენტარი|:count კომენტარი',
+  'comment' => 'კომენტარი',
   'comments' => 'კომენტარები',
   'delete' => 'წაშლა',
   'last_comments' => 'ბოლო კომენტარები',

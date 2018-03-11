@@ -41,7 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('newsletter-subscriptions', 'NewsletterSubscriptionsController', ['only' => 'store']);
 });
 
-Route::get('/', 'PostsController@index')->name('home');
+Route::get('/', function(){
+    return view('index');
+});
 Route::resource('media', 'MediaController', ['only' => 'show']);
 Route::get('/posts/feed', 'PostsFeedController@index')->name('posts.feed');
 Route::resource('posts', 'PostsController', ['only' => 'show']);

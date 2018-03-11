@@ -25,7 +25,7 @@
     <br/>
     <span class="dollar"></span> <a href="https://www.linkedin.com/in/erekle-kereselidze/" target="_blank"> <i
                 class="fa fa-linkedin-square"></i> </a>
-    <a href="https://github.com/erekle1" target="_blank"> <i class="fa fa-git-square"></i></a>
+    <a href="https://github.com/erekle1" target="_blank"><i class="fa fa-git-square"></i></a>
 </div>
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"

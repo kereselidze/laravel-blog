@@ -11,7 +11,7 @@
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Erekle Kereselidze - ერეკლე კერესელიძე</title>
 
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">

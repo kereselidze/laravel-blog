@@ -11,22 +11,25 @@
 </head>
 
 <body>
-<div class="terminal">
+<main >
+    <div class="terminal">
     <span class="dollar"></span> Hi all, I'm Erekle Kereselidze
     <br/>
     <span class="dollar"></span> A Full-Stack Web developer
     <br/>
     <span class="dollar"></span> To see my skills, plz, visit my <a
-            href="https://www.linkedin.com/in/erekle-kereselidze/" target="_blank">LinkedIn Profile</a>
+                href="https://www.linkedin.com/in/erekle-kereselidze/" target="_blank">LinkedIn Profile</a>
     <br/>
     <span class="dollar"></span> You can contact me via phone (+995) 595 36 50 20
     <br/>
     <span class="dollar"></span> Or via email erekle@kereslidze.ge
     <br/>
     <span class="dollar"></span> <a href="https://www.linkedin.com/in/erekle-kereselidze/" target="_blank"> <i
-                class="fa fa-linkedin-square"></i> </a>
+                    class="fa fa-linkedin-square"></i> </a>
     <a href="https://github.com/erekle1" target="_blank"><i class="fa fa-git-square"></i></a>
 </div>
+</main>
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

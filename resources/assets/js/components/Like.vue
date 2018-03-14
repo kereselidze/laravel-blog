@@ -11,7 +11,13 @@
 
 <script>
 export default {
-  props: ["liked", "likes_count", "item_type", "item_id", "logged_in"],
+	props: {
+		liked: Boolean,
+		likes_count: String,
+		item_type: String,
+		item_id: String,
+		logged_in: Boolean
+	},
 
   data() {
     return {

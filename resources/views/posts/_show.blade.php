@@ -1,11 +1,6 @@
 
 
 <div class="card">
-  <blog-post
-          title="{{$post->title}}"
-          author="{{$post->author}}"
-          content="{{$post->content}}"
-  ></blog-post>
   @if ($post->hasThumbnail())
     <a href="{{ route('posts.show', $post)}}">
       {{ Html::image($post->thumbnail()->url, $post->thumbnail()->original_filename, ['class' => 'card-img-top']) }}

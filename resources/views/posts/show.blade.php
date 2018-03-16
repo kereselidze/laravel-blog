@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
   <div class="bg-white p-3 post-card">
   <blog-post></blog-post>
   @if ($post->hasThumbnail())

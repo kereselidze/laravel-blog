@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const {mix} = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,13 +11,24 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-	.sass('resources/assets/sass/app.scss', 'public/css')
-	.sass('resources/assets/sass/index.scss', 'public/css');
-
-
-mix.js('resources/assets/admin/js/admin.js', 'public/js')
-	.sass('resources/assets/admin/sass/admin.scss', 'public/css');
+mix.sass('resources/assets/sass/app.scss', 'public/css')
+	.sass('resources/assets/sass/index.scss', 'public/css')
+	.sass('resources/assets/admin/sass/admin.scss', 'public/css').webpackConfig({
+	module: {
+		rules: [
+			{
+				test: /\.tsx?$/,
+				loader: 'ts-loader',
+				exclude: /node_modules/,
+			},
+		],
+	},
+	resolve: {
+		extensions: ['*', '.js', '.jsx', '.vue', '.ts', '.tsx'],
+	},
+}).js('resources/assets/js/app.js', 'public/js')
+	.js('resources/assets/admin/js/admin.js', 'public/js')
+	
 
 
 if (mix.inProduction()) {

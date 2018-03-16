@@ -1,4 +1,4 @@
-import {Resource} from "./Resource";
+
 import {apiUrl} from "../common/config";
 
 export class PostResource extends Resource {
